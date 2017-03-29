@@ -1,9 +1,14 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
     tools:context="com.example.moksleivis.manikiuras.New_post">
 
     <ScrollView
@@ -27,7 +32,66 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/new_post_add_post" />
+                android:text="@string/naujas_irasas_tipas" />
+                    <RadioGroup
+                        android:id="@+id/tipu_grupe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/gelinis"
+                            android:checked="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/naujas_irasas_tipas_gelinis"/>
+                        <RadioButton
+                            android:id="@+id/paprastas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/naujas_irasas_tipas_paprastas"/>
+                    </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/naujas_irasas_vieta"/>
+
+            <Spinner
+                android:id="@+id/vieta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/naujas_irasas_papildomos" />
+            <RadioGroup
+                android:id="@+id/papildomos_grupe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/reikalingos"
+                    android:checked="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/naujas_irasas_papildomos_reikalingos"/>
+                <RadioButton
+                    android:id="@+id/nereikalingos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/naujas_irasas_papildomos_nereikalingos"/>
+            </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
         </LinearLayout>
     </ScrollView>
 
