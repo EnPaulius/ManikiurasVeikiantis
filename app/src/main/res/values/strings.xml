@@ -13,4 +13,15 @@
     <string name="register_repeat_password">Pakartokite slaptažodį</string>
     <string name="register_email">Įveskitę elektroninį paštą</string>
     <string name="register_register_button">Užregistruoti</string>
+    <string name="naujas_irasas_vardas">Vardas, Pavarde</string>
+    <string name="naujas_irasas_tipas">Tipas:</string>
+    <string name="naujas_irasas_tipas_gelinis">gelinis</string>
+    <string name="naujas_irasas_tipas_paprastas">paprastas</string>
+    <string name="naujas_irasas_vieta">Vieta:</string>
+    <string name="naujas_irasas_vieta_salonas">Salonas</string>
+    <string name="naujas_irasas_vieta_namai">Namai</string>
+    <string name="naujas_irasas_papildomos">Papildomos paslaugos:</string>
+    <string name="naujas_irasas_papildomos_reikalingos">Reikalingos</string>
+    <string name="naujas_irasas_papildomos_nereikalingos">Nereikalingos</string>
+    <string name="naujas_irasas_numeris">Telefono numeris:</string>
 </resources>
