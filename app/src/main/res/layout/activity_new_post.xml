@@ -61,17 +61,12 @@
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="12dp" />
-            <TextView
+            <Spinner
+                android:id="@+id/naujas_irasas_vieta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/naujas_irasas_vieta_pasirinkti"
-                android:promt="@string/naujas_irasas_vieta"/>
-
-            <Spinner
-                android:id="@+id/vieta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </Spinner>
+                android:prompt="@string/naujas_irasas_vieta"/>
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="12dp" />
