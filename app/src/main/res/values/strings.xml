@@ -29,4 +29,6 @@
     <string name="naujas_irasas_mygtukas">Registruotis</string>
     <string name="login_invalid_username">Blogai ivestas vartotojo vardas</string>
     <string name="login_invalid_password">Blogai ivestas slaptazodis</string>
+    <string name="operation_one_error">Butina ivesti duomenis</string>
+    <string name="register_invalid_email">Blogai ivestas elektroninis pastas</string>
 </resources>
