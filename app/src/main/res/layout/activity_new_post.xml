@@ -27,6 +27,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="10dp" />
 
+            <EditText
+                android:id="@+id/naujas_irasas_vardas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/naujas_irasas_vardas"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -54,7 +64,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/naujas_irasas_vieta"/>
+                android:entries="@array/naujas_irasas_vieta_pasirinkti"
+                android:promt="@string/naujas_irasas_vieta"/>
 
             <Spinner
                 android:id="@+id/vieta"
@@ -88,7 +99,23 @@
 
             <Space
                 android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/naujas_irasas_numeris"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/naujas_irasas_numeris"/>
+
+            <Space
+                android:layout_width="match_parent"
                 android:layout_height="12dp" />
+
+            <Button
+                android:id="@+id/naujas_irasas_mygtukas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/naujas_irasas_mygtukas" />
 
         </LinearLayout>
     </ScrollView>

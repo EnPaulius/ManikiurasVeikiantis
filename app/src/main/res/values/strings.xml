@@ -18,10 +18,13 @@
     <string name="naujas_irasas_tipas_gelinis">gelinis</string>
     <string name="naujas_irasas_tipas_paprastas">paprastas</string>
     <string name="naujas_irasas_vieta">Vieta:</string>
-    <string name="naujas_irasas_vieta_salonas">Salonas</string>
-    <string name="naujas_irasas_vieta_namai">Namai</string>
+    <string-array name="naujas_irasas_vieta_pasirinkti">
+    <item>Salonas</item>
+    <item>Namai</item>
+    </string-array>
     <string name="naujas_irasas_papildomos">Papildomos paslaugos:</string>
     <string name="naujas_irasas_papildomos_reikalingos">Reikalingos</string>
     <string name="naujas_irasas_papildomos_nereikalingos">Nereikalingos</string>
     <string name="naujas_irasas_numeris">Telefono numeris:</string>
+    <string name="naujas_irasas_mygtukas">Registruotis</string>
 </resources>
