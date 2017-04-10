@@ -86,17 +86,29 @@ public class New_post extends AppCompatActivity {
                     sudas = false;
                 }
                 if (sudas){
-                    Toast.makeText(New_post.this,
+                    /*Toast.makeText(New_post.this,
                             "Jūsų užsakymas: " +
                                     "\nVartotojas vardas : " + String.valueOf(naujas_irasas_vardas.getText()) +
                                     "\nTipas : " + String.valueOf(tipu_grupes.getCheckedRadioButtonId()) +
                                     "\nVieta : " + String.valueOf(naujas_irasas_vieta.getSelectedItem()) +
                                     "\nPapildomos paslaugos : " + String.valueOf(papildomos_grupes.getCheckedRadioButtonId()) +
                                     "\nNumeris : " + String.valueOf(naujas_irasas_numeris.getText()),
-                            Toast.LENGTH_SHORT).show();
+                            Toast.LENGTH_SHORT).show();*/
                     cancel = true;
                 }
                 if (cancel) {
+                    Klientas debil = new Klientas(irasas, numeris,String.valueOf(naujas_irasas_vieta.getSelectedItem()), String.valueOf(papildomos_grupes.getCheckedRadioButtonId()),
+                            String.valueOf(tipu_grupes.getCheckedRadioButtonId()) );
+
+                    Toast.makeText(New_post.this,
+                            "Jūsų užsakymas: " +
+                                    "\nVartotojas vardas : " + debil.getVardas() +
+                                    "\nTipas : " + debil.getTipas() +
+                                    "\nVieta : " + debil.getVieta() +
+                                    "\nPapildomos paslaugos : " + debil.getPapildomos()  +
+                                    "\nNumeris : " + debil.getNumeris(),
+                            Toast.LENGTH_SHORT).show();
+
                     Intent myIntent = new Intent(New_post.this, MeniuActivity.class);
                     //myIntent.putExtra("key", value); //Optional parameters
                     New_post.this.startActivity(myIntent);

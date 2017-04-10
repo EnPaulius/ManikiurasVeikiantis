@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -76,6 +77,17 @@ public class RegisterActivity extends AppCompatActivity {
                 if (cancel) {
                     focusView.requestFocus();
                 } else {
+
+
+                    Registracija user = new Registracija(txt_username, txt_password, txt_email);
+
+                    Toast.makeText(RegisterActivity.this,
+                            "objekte: "+
+                                    "\nVartotojo vardas : " + user.getUsername()+
+                                    "\nPasswordas : " + user.getPassword() +
+                                    "\nEmailas : " + user.getEmail(),
+                            Toast.LENGTH_LONG).show();
+
                     Intent myIntent = new Intent(RegisterActivity.this, LoginActivity.class);
                     //myIntent.putExtra("key", value); //Optional parameters
                     RegisterActivity.this.startActivity(myIntent);
